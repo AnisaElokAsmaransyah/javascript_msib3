@@ -1,0 +1,30 @@
+ <script Language="javascript">
+    //belajar variabel dan tipe data
+    var nama = "Ridwan";
+    var jabatan   = "Manager";
+    var status = "Menikah";
+   
+    //struktur kendali
+    if(jabatan == 'Manager'){
+        gapok = 15000000;
+    }else if(jabatan == 'Staff'){
+        gapok = 5000000;
+    }else if(jabatan == 'Asistenmanager'){
+        gapok = 10000000;
+    } else{
+        gapok = 0;
+    }
+    let tunjangan_jab = 0.15 * gapok;
+    let bpjs = 0.10 * gapok;
+    let tunjangan_status = (status == 'Menikah') ? 0.20 * gapok : 0;
+    let total = tunjangan_jab + bpjs + tunjangan_status+ gapok ;
+
+    document.write(
+        "<b>Slip gaji Pegawai</b> " +
+        "<br/> Nama Pegawai : " + nama +
+        "<br/> Jabatan : " + jabatan +
+        "<br/> Status : " + status +
+        "<table border='2' cellspacing='7px' cellpadding = '5px'><tbody><tr><td>Tunjangan Jabatan</td><td>"+tunjangan_jab+"<td></tr><tr><td>BPJS</td><td>"+bpjs+"<td></tr><tr><td>Tunjangan Status</td><td>"+tunjangan_status+"<td></tr></tbody><tfoot><tr><td>Total Gaji</td><td>"+total+"</td></tr></tfoot></table>"
+    );
+   
+</script>
