@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suara Hewan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("div.ayam").click(function () {
+                $(this).css({
+                    background: "url('images/ayam.jpg')"
+                });
+            });  
+            $("#ayam").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/ayam.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+            //dst ........
+
+        });
+    </script>
+</head>
+    <h3>Suara dan gambar hewan</h3>
+    <br/>
+    <div>
+        <div class="ayam"></div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Hewan Unggas
+                </button>
+
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="ayam">
+                        <h6>Ayam</h6>
+                    <img src="images/ayam.jpg" class="img-thumbnail" alt="ayam">
+                    </div>
+                    <br/>
+                    <h6>Burung</h6>
+                    <img src="images/burung.jpg" class="img-thumbnail" alt="burung">
+                    <br/>
+                    <h6>Kalkun</h6>
+                    <img src="images/kalkun.jpg" class="img-thumbnail" alt="kalkun">
+                    <br/>
+                    <h6>Burung</h6>
+                    <img src="images/bebek.jpg" class="img-thumbnail" alt="bebek">
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Hewan Ternak
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <h6>Sapi</h6>
+                    <img src="images/sapi.jpg" class="img-thumbnail" alt="sapi">
+                    <br/>
+                    <h6>Babi</h6>
+                    <img src="images/babi.jpg" class="img-thumbnail" alt="babi">
+                    <br/>
+                    <h6>Kambing</h6>
+                    <img src="images/kambing.jpg" class="img-thumbnail" alt="kambing">
+                    <br/>
+                    <h6>Kuda</h6>
+                    <img src="images/kuda.jpg" class="img-thumbnail" alt="kuda">
+            </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Hewan Buas
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <h6>Singa</h6>
+                    <img src="images/singa.jpg" class="img-thumbnail" alt="singa">
+                    <br/>
+                    <h6>harimau</h6>
+                    <img src="images/harimau.jpg" class="img-thumbnail" alt="harimau">
+                    <br/>
+                    <h6>Anjing</h6>
+                    <img src="images/anjing.jpg" class="img-thumbnail" alt="anjing">
+                    <br/>
+                    <h6>Serigala</h6>
+                    <img src="images/serigala.jpg" class="img-thumbnail" alt="serigala">
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+</body>
+
+</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+    
